@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Exercice 1</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript" src="assets/AngularJS/angularjs-1.7.5.js"></script>
+	<script type="text/javascript" src="assets/js/script.js"></script>
+</head>
+<body ng-app="mailApp">
+	<div ng-controller="emailCtrl">
+	<form>
+		<label for="email">Email : </label><input type="text" name="email"  placeholder="Email" ng-model="mail">
+		<input type="button" name="Valid"  value="Test" ng-click="val=checkMail(mail)">
+	</form>
+	<div class="result" ng-style="{'background-color' : color}">
+	</div>
+</div>
+</body>
+</html>
